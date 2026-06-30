@@ -1,0 +1,146 @@
+/* Reset default browser margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global settings */
+body {
+    background-color: #36926c; 
+    color: #ffffff; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding-top: 40px; 
+}
+
+/* H1 Header */
+header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    margin: 40px 0; 
+}
+
+/* Centered section title */
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+/* Skills containers */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+/* H3 Header */
+.skill-box h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #e6f9f2;
+}
+
+/* Normal text */
+.skill-box p {
+    font-size: 1.1rem;
+    color: #f0f0f0; 
+}
+
+/* Bold style */
+.skill-box p strong {
+    color: #e6f9f2; 
+    font-weight: 700; 
+}
+
+/* RWD: Fit for mobiles (screens less than 600px) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem; /* smaller title on mobiles */
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+}
+
+/* YT container with 16:9 proportions */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proportions 16:9 (9 / 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* audio container */
+.audio-tracks-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+/* text + audio player */
+.audio-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/* Song description */
+.audio-track-title {
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+
+/* Audio Player */
+.audio-item audio {
+    width: 100%; 
+    display: block;
+}
+
+/* Style for links */
+a {
+    color: #d1f0e4; 
+    text-decoration: underline; 
+    font-weight: bold;
+    transition: color 0.2s ease; 
+}
+
+/* mouseover */
+a:hover {
+    color: #ffffff; 
+}
