@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+            <a href="index.html" class="back-btn">&larr; Back</a>
+        </nav>
+
+        <header style="margin-top: 20px;">
+            <h1>My Software Projects</h1>
+        </header>
+
+        <hr>
+
+        <main class="story-content">
+            <h2>Codename "COL", 2D Platformer game (Unity, C#)</h2>
+
+            <p>This is my first professional project created in Unity (using C#). It is a 2D platformer inspired by titles such as 
+                Hollow Knight, Ori, and other games in the Metroidvania genre. It is a deeply personal project for me, as both the 
+                story and the core gameplay mechanics serve as a metaphor for the struggle with depression and the process of recovery. 
+                I have already implemented most of the mechanics—including a custom controls and physics system (as Unity’s built-in 
+                physics engine lacks the precision required for this type of game), as well as systems for combat, character progression, 
+                interaction, and moste utility system like options or save/load engine. Furthermore, the entire narrative is basically 
+                complete, and five of the ten levels have already been designed, including boss encounters (I have shared screenshots of 
+                the level designs on my Patreon). Unfortunately, I have had to put the project on hold because I have yet to find an 
+                graphic artist to handle the visuals (graphic is the only element I'm not able to do myself). While I am not currently 
+                working on the title, I certainly intend to return to it, as it's something very personal for me, and I hope to 
+                complete it one day.<br><br>
+                Tech Stack: Unity, C#, FMOD.<br>
+                Short demo-showcase of my game project:
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/nb6JgPd97Bw?si=UVcmjcU9KW0MwGt6"
+                            allowfullscreen></iframe>
+                    </div></p><br><br>
+
+
+            <h2>Codename "Dungeon", 3D Co-op dungeon crawler (Unity, C#)</h2>
+            <p>My second project in Unity. It's gonna be 3D co-op dungeon crawler. The decision was driven by the fact that my last 
+                project stopped due to lack of graphics, so this time I decided to go with 3D environment, and use some ready-to-use 
+                assets. Currently I'm finishing core systems like multiplayer connection, options, controls, animations, proximity voice 
+                chat so hopefully soon I'll test all the basic stuff and be able to show more screens/clips from this game. <br><br>
+                Tech Stack: Unity, C#, FMOD, Steamworks P2P</p><br><br>
+
+            <h2>"STA" app, application for Twitch streamers/moderators (C#/.NET, Azure)</h2>
+            <p>My first big project using .NET. There are 2 parts of this app. <br>
+                First one, is online tracker, built in Azure. Its task is to track all raiding/shoutout activity for desired Twitch 
+                channel and save that data using AzureBlobStorage. As this is set on Azure, it's working 24/7 so even when you're offline, 
+                it still tracks if someone gave you a shoutout. All raids are being added to the database, including info like date, number 
+                of viewers, etc.<br>
+                Second part of this project is standalone app (PC) for streamers/moderators. Application has couple tabs to use as you want.<br>
+                <h3>Dashboard</h3> This is mainly for mods. It include:<br>
+                - Timers/countdowns with alerts, to track incentives and other stuff. <br>
+                - Chat mode detection. You select the desired chat mode for your stream, and you will be notified every time the chat 
+                mode switches to different mode (no more locking chat in sub-only mode by misclick)<br>
+                - Shoutouts - it shows cooldown on official "/shoutouts" for channel that raided you during stream. Additionally, there 
+                are one-click-copy buttons to copy "/shoutout channelX" command, for easy use during streams.<br>
+                - Global notes - set of notes, with easy option to one-click-copy them. Pinned messages, commands, any info you want to 
+                have quick access to.<br>
+                - Scratchpad - field for some quick notes. <br>
+                
+                <h3>Raid List</h3> It shows all channels from your database that are currently live in format "Name - Category - 
+                Title - Uptime - Viewers". Below there's more info about raid interactions with this channel, shoutouts, active viewers 
+                and notes. And ofc, one-click-copy button to instantly get "/raid channelX" command, which you can paste in your chat to 
+                start the raid. There's also priority system, which displays on top channels that you haven't raided since they raided 
+                you last time. And last cool feature is chat mode detection, to show if particular channel is in follower/sub-only mode.<br>
+
+                <h3>Shoutouts</h3> Display cooldowns on "/shoutouts" for channels that raided you, with nice color distinction to show 
+                which "/shoutouts" are ready. <br>
+                <h3>Notes</h3> - This is the place to add/delete/edit your "Global notes". You can add titles for notes, and by doing so, 
+                in Dahsboard you won't see whole note, just the title of that particular note (but copy button will still copy whole 
+                note text. <br>
+                <h3>Streamers</h3> It's list of all channels in your database, with option to add notes or delete channel from your 
+                database.<br>
+                <h3>Settings</h3> The app supports tracking multiple channels, so even if you're a mod for couple of streamers, you can 
+                add them all. Each added channel has separate notes/timers, etc. <br><br>
+                Even tho most of the info you can easily get by watching one streamer, there is couple of sercurity systems, so only people 
+                who are mods/channel owners can get access to database connected to your channel.<br>
+                There's also one temporary solution in dashboard, to allow track active viewers that came with a raid, but this is something 
+                that won't be present in final version of the app. It was added just as solution to be able to track Active Viewers for now, 
+                while I'm still waiting for response from Twitch and make that fully automatic.<br>
+                Future plans - fully integrated twitch chat, with more useful options for mods.</p>
+        </main>
+
+        <hr>
+
+        <section class="inspiration-gallery">
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="images/dashboard.jpg" alt="Dashboard" onclick="openModal(this)">
+                    <p class="gallery-caption">Dashboard</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/notes.jpg" alt="Notes" onclick="openModal(this)">
+                    <p class="gallery-caption">"Notes" tab</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/raidlist.jpg" alt="Raid List" onclick="openModal(this)">
+                    <p class="gallery-caption">"Raid List" tab</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/streamers.jpg" alt="Streamers tab" onclick="openModal(this)">
+                    <p class="gallery-caption">"Streamers" tab"</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/settings.jpg" alt="Settings" onclick="openModal(this)">
+                    <p class="gallery-caption">"Settings" tab</p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+    </main>
+
+    </div>
+
+    <button id="scrollToTopBtn" title="Go to top">&#8593;</button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollToTopBtn");
+
+        // Show "scroll to the top" button after 300px
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollTopBtn.classList.add("show");
+            } else {
+                scrollTopBtn.classList.remove("show");
+            }
+        };
+
+        scrollTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+
+    function openModal(element) {
+        modal.style.display = "block";
+        modalImg.src = element.src;
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+</script>
+
+</body>
+
+</html>
