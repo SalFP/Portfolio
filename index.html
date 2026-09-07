@@ -154,7 +154,7 @@
                 </div>
 
                 <!-- Panel 5: FQA -->
-                <div class="panel-card" data-target="details-writing">
+                <div class="panel-card no-expand">
                     <div>
                         <h4>FQA</h4>
                         <p>Having played video games for over 30 years, I possess extensive knowledge of the medium. I
@@ -363,7 +363,7 @@
 
     <!-- Script for showing, hiding and auto-scrolling -->
     <script>
-        const panels = document.querySelectorAll('.panel-card');
+        const panels = document.querySelectorAll('.panel-card:not(.no-expand)');
         const detailContents = document.querySelectorAll('.detail-content');
         const detailsContainer = document.getElementById('details-container');
         const closeBtns = document.querySelectorAll('.close-detail-btn');
