@@ -5,32 +5,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sal - Portfolio</title>
-    <!-- CSS Connection-->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Main container -->
     <div class="container">
 
-        <!-- Title -->
+        <!-- Main Header -->
         <header>
-            <h1>Hi, I'm Sal, aspiring software/gamedev, with soft spot for creative writing and music, looking for job
+            <h1>Hi, I'm Sal, inspiring software/gamedev, with soft spot for creative writing and music, looking for job
                 opportunities.</h1>
         </header>
 
         <hr>
 
-        <!-- Main content -->
         <main>
             <h2 class="section-title">My skills and experience</h2>
 
-            <section class="skills-container">
+            <!-- Tools and programs icons-->
+            <section class="tools-section">
+                <h3>Programs and tools</h3>
+                <div class="tools-grid">
 
-                <!-- Paragraph 1 -->
+                    <div class="tool-card">
+                        <img src="images/CSharp.png" alt="C#">
+                        <span>C#</span>
+                    </div>
+
+                    <div class="tool-card">
+                        <img src="images/Unity.png" alt="Unity">
+                        <span>Unity</span>
+                    </div>
+
+                    <div class="tool-card">
+                        <img src="images/github.png" alt="GitHub">
+                        <span>GitHub</span>
+                    </div>
+
+                    <div class="tool-card">
+                        <img src="images/NETcore.png" alt="NETCore">
+                        <span>.NET Core</span>
+                    </div>
+
+                    <div class="tool-card">
+                        <img src="images/visualstudiocode.png" alt="VS Code">
+                        <span>Visual Studio Code</span>
+                    </div>
+
+                    <div class="tool-card">
+                        <img src="images/FMODBlack.png" alt="FMOD">
+                        <span>FMOD</span>
+                    </div>
+
+                    <div class="tool-card">
+                        <img src="images/abletonlive.png" alt="Ableton Live">
+                        <span>Ableton Live</span>
+                    </div>
+
+                    <div class="tool-card">
+                        <img src="images/azure.png" alt="Azure">
+                        <span>Azure</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5 Interactive panels (2xX) -->
+            <section class="panels-grid">
+
+                <!-- Panel 1: .NET -->
+                <div class="panel-card" data-target="details-dotnet">
+                    <div>
+                        <h4>C# / .NET</h4>
+                        <p>
+                            <strong>Tech Stack:</strong> C#, .NET 10, ASP.NET MVC, REST APIs, LINQ, React, SQL, Azure,
+                            Docker, RabbitMQ.<br>
+                            <strong>Architecture: </strong>Strong focus on OOP, Async/Await, Dependency Injection, Clean
+                            Code, SOLID, and DRY principles. <br>
+                            <strong>Featured Project:</strong> Built a Twitch streaming solution with a 24/7 Azure cloud
+                            logger (Blob Storage) and a desktop dashboard app.<br>
+                            <strong>Tools & Workflow:</strong> Primary environment in Visual Studio, VS Code, and
+                            GitHub.<br>
+                            <strong>AI Integration:</strong> Utilize AI tools for workflow efficiency while manually
+                            auditing, refactoring, and optimizing all code.<br>
+                        </p>
+                    </div>
+                    <button class="see-more-btn">...see more</button>
+                </div>
+
+                <!-- Panel 2: Unity -->
+                <div class="panel-card" data-target="details-unity">
+                    <div>
+                        <h4>C# / Unity</h4>
+                        <p>
+                            <strong>Primary 2D Project:</strong> Currently building a full-scale 2D platformer, handling
+                            all technical programming and game design aspects.<br>
+                            <strong>Custom Character Physics:</strong> Programmed a custom physics engine and character
+                            controller to ensure precise and responsive movement compared to default Unity physics.<br>
+                            <strong>Gameplay Systems:</strong> Implemented core mechanics including combat, skill
+                            progression, character stats, robust Save/Load system, gamepad controller support.<br>
+                            <strong>Audio Middleware:</strong> Integrated FMOD for dynamic sound execution, with full
+                            flexibility to adapt to Wwise if required.<br>
+                            <strong>3D Co-op Project:</strong> Developing a second title — a 3D co-op dungeon crawler.
+                            Already implemented core systems including character classes, animations, options, and
+                            multiplayer networking via Steamworks P2P.<br>
+                        </p>
+                    </div>
+                    <button class="see-more-btn">...see more</button>
+                </div>
+
+                <!-- Panel 3: Audio -->
+                <div class="panel-card" data-target="details-audio">
+                    <div>
+                        <h4>Audio (Music Composition & SFX)</h4>
+                        <p>
+                            <strong>Game Audio Portfolio:</strong> Experience crafting sound design for dark fantasy FPS
+                            titles, wave-shooters, and game trailers.<br>
+                            <strong>Audio Engineering:</strong> Professional live sound background with expert mixing,
+                            mastering, and virtual instrument library usage.<br>
+                            <strong>No AI Guarantee:</strong> 100% human-composed music and sound effects created
+                            without generative AI tools.<br>
+                            <strong>Bespoke SFX:</strong> Design custom audio for UI, combat impacts, player
+                            interactions, and ambient environments.<br>
+                            <strong>Director-Aligned:</strong> Skilled at adapting compositions directly to a Lead Audio
+                            Director’s creative vision.<br>
+                        </p>
+                    </div>
+                    <button class="see-more-btn">...see more</button>
+                </div>
+
+                <!-- Panel 4: Creative Writing -->
+                <div class="panel-card" data-target="details-writing">
+                    <div>
+                        <h4>Creative Writing</h4>
+                        <p>
+                            <strong>TTRPG Background:</strong> 30 years as a Game Master and player, specializing in
+                            interactive, non-linear storytelling.<br>
+                            <strong>Psychology Degree:</strong> Master’s in Psychology applied directly to building
+                            realistic character motivations, flaws, and behavioral profiles.<br>
+                            <strong>Reactive World Design:</strong> Reject rigid "railroading" in favor of reactive NPCs
+                            and open-ended narrative choices.<br>
+                            <strong>Worldbuilding:</strong> Draw from history, folklore, and global cultures to
+                            construct rich lore, factions, and settings.<br>
+                            <strong>Dialogue & Lore:</strong> Write natural dialogue and background lore that reflects
+                            specific character backstories and subtext.<br>
+                    </div>
+                    <button class="see-more-btn">...see more</button>
+                </div>
+
+                <!-- Panel 5: FQA -->
+                <div class="panel-card" data-target="details-writing">
+                    <div>
+                        <h4>FQA</h4>
+                        <p>Having played video games for over 30 years, I possess extensive knowledge of the medium. I
+                            have experienced <strong>hundreds of titles</strong>, along with all their flaws and bugs. 
+                            I enjoy <strong>pushing the boundaries </strong>of what games can do and experimenting with 
+                            <strong>unconventional behaviors</strong> to see if they are feasible and what effects they 
+                            produce. I play a <strong>wide variety of games</strong>, ranging from FPS and ARPG titles 
+                            to strategy games and simulators. My <strong>background in programming and game 
+                            development</strong> is a key asset - whenever I encounter a bug, I try to <strong>analyze 
+                            what is happening "under the hood"</strong> and determine the potential <strong>cause of the 
+                            issue.</strong><br><br>
+                        </p>
+                    </div>
+                </div>
                 <div class="skill-box">
-                    <h3>C# / .NET</h3>
+                    <h3>Contact</h3>
+                    <p><strong>Email:</strong> salanos.val@gmail.com</p>
+                </div>
+
+            </section>
+
+            <!-- Detailed info panels -->
+            <section id="details-container" class="details-container">
+
+                <!-- Paragraph 1: .NET -->
+                <div id="details-dotnet" class="detail-content">
+                    <div class="detail-header">
+                        <h3>C# / .NET - Detailed Experience</h3>
+                        <button class="close-detail-btn">&times;</button>
+                    </div>
                     <p>Some time ago, I decided to leverage my C# knowledge to pivot toward more practical application
                         development, which led me to learn .NET and web development. Despite my relatively short history
                         with this ecosystem, I have already mastered the fundamentals of <strong>.NET 10, ASP.NET MVC,
@@ -51,15 +205,21 @@
                         a developer's discerning eye to audit, refactor, and properly integrate. <br><br>
                         Link to my github with some simple projects and desktop app for Twitch Streamers (technically
                         it's still Work-In-Progress, as I'm still waiting for feedback from my client as well
-                        as from the Twitch Dev Support, to improve some functions in the app): <br>
+                        as from the Twitch Dev Support, to improve some functions in the app): <br><br>
                         <a href="https://github.com/Sal-val" target="_blank" rel="noopener noreferrer">My github with C#
-                            / .NET projects</a>
+                            / .NET projects</a><br>
+                    <p style="margin-top: 15px;">
+                        <a href="sta.html">More about my app for Twitch streamers</a>
+                    </p>
                     </p>
                 </div>
 
-                <!-- Paragraph 2 -->
-                <div class="skill-box">
-                    <h3>C# / Unity</h3>
+                <!-- Paragraph 2: Unity -->
+                <div id="details-unity" class="detail-content">
+                    <div class="detail-header">
+                        <h3>C# / Unity - Detailed Experience</h3>
+                        <button class="close-detail-btn">&times;</button>
+                    </div>
                     <p>My journey with C# began in game development using the Unity engine. Having already completed
                         over a dozen smaller game projects, I am currently developing a full-scale 2D platformer, where
                         I am responsible for every aspect of development except the art.<br>
@@ -75,26 +235,38 @@
                         <strong>dialogue system built with localization support </strong> for multiple languages.
                         Lastly, I use <strong>FMOD </strong> for audio implementation, though I could easily adapt to
                         <strong>Wwise</strong> if a project required it.<br><br>
-                        Currently I'm working on my second project, which is <strong>3D co-op dungeon crawler</strong>. It's still in very 
-                        early phase, but I already made core systems <strong>(controls, options, multiplayer using Steamworks P2P, 
-                        animations, different classes for characters)</strong> and I hope I'm gonna be able to post some short 
-                        showcase vid here soon.<br><br>
-                        Link to my github with some samples of code (mainly menus, save/load systems, options, etc):
-                        <br>
-                        <a href="https://github.com/SalFP/GameSystemsDemo" target="_blank" rel="noopener noreferrer">My
-                            github with samples of my gamedev projects</a> <br><br>
-                        Short demo-showcase of my game project:
+                        Currently I'm working on my second project, which is <strong>3D co-op dungeon crawler</strong>.
+                        It's still in very
+                        early phase, but I already made core systems <strong>(controls, options, multiplayer using
+                            Steamworks P2P,
+                            animations, different classes for characters)</strong> and I hope I'm gonna be able to post
+                        some short
+                        showcase vid here soon.<br>
+                    <p style="margin-top: 15px;">
+                        <a href="SMS.html">More about my game projects</a>
+                    </p><br>
+                    Link to my github with some samples of code (mainly menus, save/load systems, options, etc):
+                    <br>
+
+                    <a href="https://github.com/SalFP/GameSystemsDemo" target="_blank" rel="noopener noreferrer">My
+                        github with samples of my gamedev projects</a> <br><br>
+                    Short demo-showcase of my game project:
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/nb6JgPd97Bw?si=UVcmjcU9KW0MwGt6"
                             allowfullscreen></iframe>
                     </div>
+
                     </p>
                 </div>
 
-                <!-- Paragraph 3 -->
-                <div class="skill-box">
-                    <h3>Audio (Music Composition & SFX)</h3>
-                    <p>After taking a hiatus from the audio industry, I am looking to leverage my extensive background
+                <!-- Paragraph 3: Audio -->
+                <div id="details-audio" class="detail-content">
+                    <div class="detail-header">
+                        <h3>Audio (Music & SFX) - Detailed Experience</h3>
+                        <button class="close-detail-btn">&times;</button>
+                    </div>
+                    <p>(NO AI). After taking a hiatus from the audio industry, I am looking to leverage my extensive
+                        background
                         in this field to contribute to game soundtracks and sound design. My past experience includes
                         collaborating on the audio design for a dark fantasy FPS, crafting SFX for a video game trailer,
                         and composing multiple tracks for a dark fantasy wave-shooter.<br><br>
@@ -146,76 +318,98 @@
                         </div>
 
                     </div>
-                    <p>All music included in my game showcase-video above, was also made by myself</p>
+                    <p>All music included in my game showcase-video above, was also made by myself. I'm not using any
+                        form
+                        of AI when creating music.</p>
                 </div>
 
-                <!-- Paragraph 4 -->
-                <div class="skill-box">
-                    <h3>QA</h3>
-                    <p>Having played video games for over 30 years, I possess extensive knowledge of the medium. I have experienced 
-                        <strong>hundreds of titles</strong>, along with all their flaws and bugs. I enjoy <strong>pushing the boundaries 
-                        </strong>of what games can do and experimenting with <strong>unconventional behaviors</strong> to see if they 
-                        are feasible and what effects they produce. I play a <strong>wide variety of games</strong>, ranging from FPS 
-                        and ARPG titles to strategy games and simulators. My <strong>background in programming and game development</strong> 
-                        is a key asset - whenever I encounter a bug, I try to <strong>analyze what is happening "under the hood"</strong> 
-                        and determine the potential <strong>cause of the issue.</strong><br><br>                       
-                    </p>
-                    
-                </div>
-
-                <!-- Paragraph 5 -->
-                <div class="skill-box">
-                    <h3>Creative Writing</h3>
+                <!-- Paragraph 4: Creative Writing -->
+                <div id="details-writing" class="detail-content">
+                    <div class="detail-header">
+                        <h3>Creative Writing - Detailed Experience</h3>
+                        <button class="close-detail-btn">&times;</button>
+                    </div>
                     <p>For over 30 years, I have been an active participant in <strong>Tabletop RPGs (TTRPGs)</strong>
-                        as both a <strong>Game
-                            Master and a player</strong>. This lifelong passion has honed my ability to craft
-                        <strong>compelling narratives,
-                            deep characters, and unique gameplay mechanics designed to introduce fresh elements or
-                            transform
-                            specific thematic concepts into interactive player experiences.</strong><br>
+                        as both a <strong>Game Master and a player</strong>. This lifelong passion has honed my ability
+                        to craft <strong>compelling narratives, deep characters, and unique gameplay mechanics designed
+                            to introduce fresh elements or transform specific thematic concepts into interactive player
+                            experiences.</strong><br>
                         When it comes to narrative design, I am fundamentally opposed to forcing players down a single,
                         rigid path or a predetermined sequence of events. Instead, I focus on creating NPCs with
-                        <strong>deep
-                            psychological profiles and distinct motivations</strong>. This approach ensures that
-                        regardless of player
-                        choices, non-player characters can naturally adapt to new situations and dynamically pursue
-                        their goals.<br>
+                        <strong>deep psychological profiles and distinct motivations</strong>. This approach ensures
+                        that
+                        regardless of player choices, non-player characters can naturally adapt to new situations and
+                        dynamically pursue their goals.<br>
                         Even as a player, I construct backstories by weaving in complex elements that directly shape a
                         character’s worldview. To me, a character's history—from birth to the start of the game—is a
                         crucible that molds their <strong>unique flaws and virtues</strong>. I analyze how their
-                        upbringing and
-                        environment would realistically impact their <strong>psyche and behavioral patterns</strong>.
-                        This process of
-                        building deep, coherent characters that defy the standard "generic fantasy hero" tropes is
-                        heavily elevated by my formal education and <strong>Master’s degree in Psychology</strong>.
-                        Furthermore, my
-                        fascination with <strong>diverse cultures, civilizations and folklore </strong>serves as a rich
-                        fountain of inspiration for
-                        my worldbuilding.</p>
+                        upbringing and environment would realistically impact their <strong>psyche and behavioral
+                            patterns</strong>. This process of building deep, coherent characters that defy the standard
+                        "generic fantasy hero" tropes is heavily elevated by my formal education and <strong>Master’s
+                            degree in Psychology</strong>. Furthermore, my fascination with <strong>diverse cultures,
+                            civilizations and folklore </strong>serves as a rich fountain of inspiration for my
+                        worldbuilding.
+                    </p>
                     <p style="margin-top: 15px;">
                         <a href="dndcharacterconcept.html">D&D Character Concept &rarr;</a>
                     </p>
                 </div>
 
-                <!-- Paragraph 6 -->
-                <div class="skill-box">
-                    <h3>More info about my software projects</h3>
-                    <p style="margin-top: 15px;">
-                        <a href="SMS.html">My software projects &rarr;</a>
-                    </p>
-                </div>
-
-
-                <!-- Paragraph 7 -->
-                <div class="skill-box">
-                    <h3>Contact</h3>
-                    <p><strong>Email:</strong> salanos.val@gmail.com</p>
-                </div>
-
             </section>
+
         </main>
 
     </div>
+
+    <!-- Script for showing, hiding and auto-scrolling -->
+    <script>
+        const panels = document.querySelectorAll('.panel-card');
+        const detailContents = document.querySelectorAll('.detail-content');
+        const detailsContainer = document.getElementById('details-container');
+        const closeBtns = document.querySelectorAll('.close-detail-btn');
+
+        panels.forEach(panel => {
+            panel.addEventListener('click', () => {
+                const targetId = panel.getAttribute('data-target');
+                const targetContent = document.getElementById(targetId);
+
+                // Close panel if active
+                if (panel.classList.contains('active')) {
+                    panel.classList.remove('active');
+                    detailsContainer.classList.remove('open');
+                    targetContent.classList.remove('active');
+                    return;
+                }
+
+                // Unselect other panels and close other texts
+                panels.forEach(p => p.classList.remove('active'));
+                detailContents.forEach(c => c.classList.remove('active'));
+
+                // Activate panel and show detailed text
+                panel.classList.add('active');
+                targetContent.classList.add('active');
+                detailsContainer.classList.add('open');
+
+                // Auto-scroll to new opened text with 50ms delay
+                setTimeout(() => {
+                    detailsContainer.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 50);
+            });
+        });
+
+        // Close (X) buttons in detailed section
+        closeBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                panels.forEach(p => p.classList.remove('active'));
+                detailsContainer.classList.remove('open');
+                detailContents.forEach(c => c.classList.remove('active'));
+            });
+        });
+    </script>
 
 </body>
 

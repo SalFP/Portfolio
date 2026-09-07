@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Projects</title>
+    <title>Software Projects (gamedev)</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +17,7 @@
         </nav>
 
         <header style="margin-top: 20px;">
-            <h1>My Software Projects</h1>
+            <h1>My Software Projects (gamedev)</h1>
         </header>
 
         <hr>
@@ -49,83 +49,9 @@
                 project stopped due to lack of graphics, so this time I decided to go with 3D environment, and use some ready-to-use 
                 assets. Currently I'm finishing core systems like multiplayer connection, options, controls, animations, proximity voice 
                 chat so hopefully soon I'll test all the basic stuff and be able to show more screens/clips from this game. <br><br>
-                Tech Stack: Unity, C#, FMOD, Steamworks P2P</p><br><br>
-
-            <h2>"STA" app, application for Twitch streamers/moderators (C#/.NET, Azure)</h2>
-            <p>My first big project using .NET. There are 2 parts of this app. <br>
-                First one, is online tracker, built in Azure. Its task is to track all raiding/shoutout activity for desired Twitch 
-                channel and save that data using AzureBlobStorage. As this is set on Azure, it's working 24/7 so even when you're offline, 
-                it still tracks if someone gave you a shoutout. All raids are being added to the database, including info like date, number 
-                of viewers, etc.<br>
-                Second part of this project is standalone app (PC) for streamers/moderators. Application has couple tabs to use as you want.<br>
-                <h3>Dashboard</h3> This is mainly for mods. It include:<br>
-                - Timers/countdowns with alerts, to track incentives and other stuff. <br>
-                - Chat mode detection. You select the desired chat mode for your stream, and you will be notified every time the chat 
-                mode switches to different mode (no more locking chat in sub-only mode by misclick)<br>
-                - Shoutouts - it shows cooldown on official "/shoutouts" for channel that raided you during stream. Additionally, there 
-                are one-click-copy buttons to copy "/shoutout channelX" command, for easy use during streams.<br>
-                - Global notes - set of notes, with easy option to one-click-copy them. Pinned messages, commands, any info you want to 
-                have quick access to.<br>
-                - Scratchpad - field for some quick notes. <br>
-                
-                <h3>Raid List</h3> It shows all channels from your database that are currently live in format "Name - Category - 
-                Title - Uptime - Viewers". Below there's more info about raid interactions with this channel, shoutouts, active viewers 
-                and notes. And ofc, one-click-copy button to instantly get "/raid channelX" command, which you can paste in your chat to 
-                start the raid. There's also priority system, which displays on top channels that you haven't raided since they raided 
-                you last time. And last cool feature is chat mode detection, to show if particular channel is in follower/sub-only mode.<br>
-
-                <h3>Shoutouts</h3> Display cooldowns on "/shoutouts" for channels that raided you, with nice color distinction to show 
-                which "/shoutouts" are ready. <br>
-                <h3>Notes</h3> - This is the place to add/delete/edit your "Global notes". You can add titles for notes, and by doing so, 
-                in Dahsboard you won't see whole note, just the title of that particular note (but copy button will still copy whole 
-                note text. <br>
-                <h3>Streamers</h3> It's list of all channels in your database, with option to add notes or delete channel from your 
-                database.<br>
-                <h3>Settings</h3> The app supports tracking multiple channels, so even if you're a mod for couple of streamers, you can 
-                add them all. Each added channel has separate notes/timers, etc. <br><br>
-                Even tho most of the info you can easily get by watching one streamer, there is couple of sercurity systems, so only people 
-                who are mods/channel owners can get access to database connected to your channel.<br>
-                There's also one temporary solution in dashboard, to allow track active viewers that came with a raid, but this is something 
-                that won't be present in final version of the app. It was added just as solution to be able to track Active Viewers for now, 
-                while I'm still waiting for response from Twitch and make that fully automatic.<br>
-                Future plans - fully integrated twitch chat, with more useful options for mods.<br><br>
-                Tech Stack: C#, .NET, React, Azure
-            </p>
+                Tech Stack: Unity, C#, FMOD, Steamworks P2P</p><br><br>            
         </main>
-
         <hr>
-
-        <section class="inspiration-gallery">
-            <div class="gallery-grid">
-
-                <div class="gallery-item">
-                    <img src="images/dashboard.jpg" alt="Dashboard" onclick="openModal(this)">
-                    <p class="gallery-caption">Dashboard</p>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="images/notes.jpg" alt="Notes" onclick="openModal(this)">
-                    <p class="gallery-caption">"Notes" tab</p>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="images/raidlist.jpg" alt="Raid List" onclick="openModal(this)">
-                    <p class="gallery-caption">"Raid List" tab</p>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="images/streamers.jpg" alt="Streamers tab" onclick="openModal(this)">
-                    <p class="gallery-caption">"Streamers" tab"</p>
-                </div>
-
-                <div class="gallery-item">
-                    <img src="images/settings.jpg" alt="Settings" onclick="openModal(this)">
-                    <p class="gallery-caption">"Settings" tab</p>
-                </div>
-
-            </div>
-        </section>
-
     </div>
 
 
